@@ -1,0 +1,27 @@
+#ifndef __DCA_MATRIX_CONV2D_MEMORYMAP_OFFSET_H__
+#define __DCA_MATRIX_CONV2D_MEMORYMAP_OFFSET_H__
+
+// reg dca_matrix_conv2d_inst
+#define BW_DCA_MATRIX_CONV2D_INST 512
+
+// reg dca_matrix_conv2d_inst_stride_m1
+#define BW_DCA_MATRIX_CONV2D_INST_STRIDE_M1 4
+
+// reg dca_matrix_conv2d_inst_pad_amount
+#define BW_DCA_MATRIX_CONV2D_INST_PAD_AMOUNT 4
+
+// reg dca_matrix_conv2d_log
+#define BW_DCA_MATRIX_CONV2D_LOG 32
+
+// reg dca_matrix_conv2d_status
+#define BW_DCA_MATRIX_CONV2D_STATUS 32
+
+// reg dca_matrix_conv2d_opcode
+#define BW_DCA_MATRIX_CONV2D_OPCODE 2
+#define DCA_MATRIX_CONV2D_OPCODE_ACC_CLEAR 1
+#define DCA_MATRIX_CONV2D_OPCODE_ACC_STORE 2
+#define DCA_MATRIX_CONV2D_OPCODE_INDEX_ACC_CLEAR 0
+#define DCA_MATRIX_CONV2D_OPCODE_INDEX_ACC_STORE 1
+#define DCA_MATRIX_CONV2D_OPCODE_NONE 0
+
+#endif

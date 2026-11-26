@@ -1,0 +1,6 @@
+all:${ARX_API_HOME}/lib
+all:${ARX_API_HOME}/include
+all:${ARX_API_HOME}/test/board_test/mamba/src
+all:${ARX_API_HOME}/test/board_test/mamba/build/include
+all:../../user/api
+all:./src

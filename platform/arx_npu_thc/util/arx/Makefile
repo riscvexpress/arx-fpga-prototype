@@ -1,0 +1,32 @@
+include ${RVX_RELEASE_HOME}/rvx_config_path.mh
+
+TEMPLATE_FILE = ${RVX_DEVKIT_HOME}/util/Makefile.arx.template
+include ${RVX_UTIL_HOME}/template_makefile.mh
+
+-include ./rvx_each.mh
+
+APP_NAME_LIST=mnist small_charRNN mamba
+
+check:
+	@echo ${APP_NAME_LIST}
+
+all: arx_all
+
+clean:
+	@true
+
+arx_all: onnx arx_api
+
+onnx:
+	${PYTHON3_CMD} -m pip install onnx onnxruntime
+
+arx_api: arx_api_build
+
+$(addprefix arx_api_build., $(APP_NAME_LIST)):arx_api_build.%:
+	cd ${ARX_API_HOME}/test/board_test/$(*) && make build PY=${PYTHON3_CMD}
+
+arx_api_build: $(addprefix arx_api_build., $(APP_NAME_LIST))
+
+FORCE:
+
+.PHONY: FORCE clean

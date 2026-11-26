@@ -1,0 +1,5 @@
+all:${ARX_API_HOME}/lib
+all:${ARX_API_HOME}/include
+all:${ARX_API_HOME}/test/board_test/mlir_mnist/src
+all:../../user/api
+all:./src

@@ -1,0 +1,6 @@
+all:${ARX_API_HOME}/lib
+all:${ARX_API_HOME}/include
+all:${ARX_API_HOME}/test/board_test/small_charRNN/src
+all:${ARX_API_HOME}/test/board_test/small_charRNN/build/include
+all:../../user/api
+all:./src
