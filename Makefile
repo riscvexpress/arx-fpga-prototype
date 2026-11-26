@@ -23,5 +23,5 @@ include ./rvx_init.mh
 RVX_DEVKIT_HOME?= ./rvx_devkit
 -include ${RVX_DEVKIT_HOME}/makefile/rvx_home.mh
 
-RVX_INSTALL_MODULE_LIST ?= rvx_util rvx_binary rvx_synthesizer rvx_devkit rvx_ssw rvx_hwlib_basic rvx_hwlib_special rvx_platform_example rvx_imp_class
+RVX_INSTALL_MODULE_LIST ?= rvx_util rvx_binary rvx_synthesizer rvx_devkit rvx_ssw rvx_hwlib_basic rvx_hwlib_special rvx_platform_example rvx_imp_class arx_api
 export RVX_INSTALL_MODULE_LIST
