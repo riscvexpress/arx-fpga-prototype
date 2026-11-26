@@ -54,3 +54,13 @@ make update
 ```
 
 <!-- local -->
+## Using arx_api in a platform
+
+To use `arx_api` in a platform, run `make all` in that platform's `util/arx` directory.
+
+```sh
+cd ./platform/<platform_name>/util
+make arx          # create util/arx if it does not exist yet
+cd arx
+make all
+```
